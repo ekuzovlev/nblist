@@ -1,0 +1,5 @@
+<h1>Последние 10 предсказаний</h1>
+
+<% @predictions.each do |prediction| %>
+  <p><%= prediction.answer.body %></p>
+<% end %>

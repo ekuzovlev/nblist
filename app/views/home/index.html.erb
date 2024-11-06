@@ -1,0 +1,12 @@
+<h2>Хорошо подумай и задай вопрос</h2>
+
+<div data-controller="prediction">
+  <h1 data-prediction-target="prediction" type="text"></h1>
+  <button data-action="click->prediction#ask" data-prediction-target="button">Спросить</button>
+</div>
+
+<hr>
+
+<h3>
+  <%= link_to "Посмотреть последние предсказания", predictions_path %>
+</h3>
