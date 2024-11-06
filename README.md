@@ -1,24 +1,12 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Небольшое приложение для тестирования деплоя с помощью Kamal
 
-Things you may want to cover:
+Не забываем добавить переменные окружение с помощью
+```
+export $KAMAL_SSH_URL=user@xxx.xxx.xxx.xxx
+```
 
-* Ruby version
+Начать можно с `kamal help` команды на любой вкус
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Для разных архитектур смотри deploy.yml
