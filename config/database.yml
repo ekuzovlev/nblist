@@ -88,7 +88,7 @@ production:
     <<: *default
     database: nblist_production
     username: nblist
-    password: <%= ENV["NBLIST_DATABASE_PASSWORD"] %>
+    password: postgres %>
   cache:
     <<: *primary_production
     database: nblist_production_cache
