@@ -1,5 +1,5 @@
 <h1>Последние 10 предсказаний</h1>
 
 <% @predictions.each do |prediction| %>
-  <p><%= prediction.answer.body %></p>
+  <p><%= prediction.created_at.to_fs(:db) %> -> <%= prediction.answer.body %></p>
 <% end %>

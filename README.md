@@ -4,7 +4,7 @@
 
 Не забываем добавить переменные окружение с помощью
 ```
-export $KAMAL_SSH_URL=user@xxx.xxx.xxx.xxx
+export KAMAL_SSH_URL=user@xxx.xxx.xxx.xxx
 ```
 
 Начать можно с `kamal help` команды на любой вкус
