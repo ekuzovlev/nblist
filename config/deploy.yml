@@ -112,6 +112,8 @@ accessories:
         - POSTGRES_PASSWORD
     directories:
       - data:/var/lib/postgresql/data
+    files:
+      - config/init.sql:/docker-entrypoint-initdb.d/setup.sql
     # options:
     #   network: "private" # This is important!
     # # Change to 3306 to expose port to the world instead of just local network.
