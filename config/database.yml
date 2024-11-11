@@ -89,6 +89,7 @@ production:
     database: nblist_production
     username: postgres
     password: <%= ENV["POSTGRES_PASSWORD"] %>
+    host: nblist-db
   cache:
     <<: *primary_production
     database: nblist_production_cache
