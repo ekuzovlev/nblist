@@ -102,9 +102,8 @@ accessories:
     port: 5432
     env:
       clear:
-        POSTGRES_USER: "postgres"
-        POSTGRES_DB: "nblist_production" # The database will be created automatically on first boot.
-        POSTGRES_PASSWORD: postgres
+        POSTGRES_USER: postgres
+        POSTGRES_DB: nblist_production # The database will be created automatically on first boot.
       secret:
         - POSTGRES_PASSWORD
     directories:
