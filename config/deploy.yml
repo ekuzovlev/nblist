@@ -104,8 +104,9 @@ accessories:
       clear:
         POSTGRES_USER: "postgres"
         POSTGRES_DB: "nblist_production" # The database will be created automatically on first boot.
+        POSTGRES_PASSWORD: postgres
       secret:
-        - PG_ROOT_PASSWORD
+        - POSTGRES_PASSWORD
     directories:
       - data:/var/lib/postgresql/data
     # options:
