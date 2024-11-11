@@ -86,9 +86,10 @@ test:
 production:
   primary: &primary_production
     <<: *default
-    database: nblist_production
-    username: nblist
-    password: postgres %>
+    database: <%= ENV["KAMAL_POSTGRES_DB"] %>
+    username: <%= ENV["KAMAL_POSTGRES_USER"] %>
+    password: <%= ENV["KAMAL_POSTGRES_PASSWORD"] %>
+    host: <%= ENV["KAMAL_POSTGRES_HOST"] %>
   cache:
     <<: *primary_production
     database: nblist_production_cache
